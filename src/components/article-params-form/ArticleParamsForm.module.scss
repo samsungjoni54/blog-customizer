@@ -24,6 +24,7 @@
   background-color: #fff;
   border-right: 1px solid #000;
 }
+
 .content_wrapper {
   display: flex;
   flex-direction: column;
@@ -36,12 +37,13 @@
 }
 
 .form_title {
-  font-size: 31px;
-  text-transform: uppercase;
-  font-family: Open Sans;
-  font-weight: 800;
   margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 31px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
+
 .bottomContainer {
   display: flex;
   justify-content: space-between;
