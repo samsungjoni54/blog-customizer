@@ -11,6 +11,7 @@ import {
 import { RadioGroup } from '@/ui/radio-group';
 import { Select } from '@/ui/select';
 import { useOutsideClickClose } from '@/ui/select/hooks/useOutsideClickClose';
+import { Separator } from '@/ui/separator';
 import { clsx } from 'clsx';
 import { useRef, useState, type FormEvent } from 'react';
 import { ArrowButton } from 'src/ui/arrow-button';
@@ -76,7 +77,7 @@ export const ArticleParamsForm = ({
                 }
               />
             </div>
-
+            <Separator />
             <div className={styles.control_group}>
               <Select
                 title="цвет фона"

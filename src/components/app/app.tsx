@@ -9,25 +9,25 @@ import { Article } from '../article/Article';
 import styles from './app.module.scss';
 
 export const App = (): React.JSX.Element => {
-  const [state, setState] = useState(defaultArticleState);
+  const [articleState, setArticleState] = useState(defaultArticleState);
 
   const handleApply = (newValue: ArticleStateType): void => {
-    setState(newValue);
+    setArticleState(newValue);
   };
   return (
     <main
       className={clsx(styles.main)}
       style={
         {
-          '--font-family': state.fontFamilyOption.value,
-          '--font-size': state.fontSizeOption.value,
-          '--font-color': state.fontColor.value,
-          '--container-width': state.contentWidth.value,
-          '--bg-color': state.backgroundColor.value,
+          '--font-family': articleState.fontFamilyOption.value,
+          '--font-size': articleState.fontSizeOption.value,
+          '--font-color': articleState.fontColor.value,
+          '--container-width': articleState.contentWidth.value,
+          '--bg-color': articleState.backgroundColor.value,
         } as CSSProperties
       }
     >
-      <ArticleParamsForm state={state} onApply={handleApply} />
+      <ArticleParamsForm state={articleState} onApply={handleApply} />
       <Article />
     </main>
   );
